@@ -1,0 +1,30 @@
+@import "./var.scss";
+
+.bgYellow {
+  background-color: $yellow-1;
+}
+
+.fontBlack {
+  color: $black-1;
+}
+
+.fontWhite {
+  color: $white-1;
+}
+
+.pad8 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.width100 {
+  width: 100px;
+}
+
+.radius15 {
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+}
