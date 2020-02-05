@@ -4,13 +4,13 @@ import './button.scss'
 
 function Button(props) {
 	let localClass = "";
+	let types = ["primary", "disabled"];
 
-	if(props.type === "primary") {
-		localClass="primary"
-	}
-
-	if(props.type === "disabled") {
-		localClass="disabled"
+	// Checks for type and sets localClass when necessary
+	for(let i = 0; i < types.length; i++) {
+		if(props.type === types[i]) {
+			localClass = props.type;
+		}
 	}
 
 	const cls = `bgYellow	fontBlack pad8 width100 radius15 ${localClass}`.trim();
