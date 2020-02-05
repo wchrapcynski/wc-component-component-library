@@ -6,7 +6,7 @@ This is a library that I am currently building that will contain reusable ReactJ
 
 ### Requirements
 
-* [https://nodejs.org/en/](NodeJS)
+* [NodJS](https://nodejs.org/en/)
 
 ### Installation
 
