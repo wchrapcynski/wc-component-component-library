@@ -4,11 +4,11 @@ import './button.scss'
 
 function Button(props) {
 
-	const cls = `pad8 width100 radius15 ${props.type}`.trim();
+	const buttonStyle = `pad8 width100 radius15 ${props.type}`.trim();
 
   return (
     <div className='button'>
-      <button className={cls}>{props.children}</button>
+      <button className={buttonStyle} onClick={props.onClickHandle}>{props.children}</button>
     </div>
   );
 }
