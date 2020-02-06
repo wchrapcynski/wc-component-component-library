@@ -1,17 +1,17 @@
 @import "./../../styles/common.scss";
 
-@mixin button-template($color1, $color2) {
+@mixin button-template($color1, $color2, $font1, $font2) {
   text-transform: uppercase;
   font-weight: bold;
   background-color: $color1;
-  color: $white-1;
+  color: $font1;
   border: 2px solid $color2;
   &:hover {
-    color: $white-1;
+    color: $font1;
     background-color: $color2;
   }
   &:active {
-    color: $white-2;
+    color: $font2;
   }
 }
 
@@ -20,23 +20,35 @@
     outline: 0;
   }
   .primary {
-    @include button-template($blue-1, $blue-2);
+    @include button-template($blue-1, $blue-2, $white-1, $white-2);
   }
 
   .secondary {
-    @include button-template($grey-1, $grey-2)
+    @include button-template($grey-1, $grey-2, $white-1, $white-2)
   }
 
   .success {
-    @include button-template($green-1, $green-2)
+    @include button-template($green-1, $green-2, $white-1, $white-2)
   }
 
   .danger {
-    @include button-template($red-1, $red-2)
+    @include button-template($red-1, $red-2, $white-1, $white-2)
   }
 
 	.warning {
-    @include button-template($yellow-1, $yellow-2)
+    @include button-template($yellow-1, $yellow-2, $white-1, $white-2)
+	}
+
+	.info {
+    @include button-template($aqua-1, $aqua-2, $white-1, $white-2)
+	}
+
+	.light {
+    @include button-template($white-1, $white-2, $grey-1, $grey-2)
+	}
+
+	.dark {
+		@include button-template($black-1, $black-2, $white-1, $white-2)
 	}
 	
   .disabled {
