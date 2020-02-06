@@ -36,6 +36,22 @@
 			border: 2px solid $black-1;
 		}
 	}
+
+	.success {
+		text-transform: uppercase;
+		font-weight: bold;
+		background-color: $green-1;
+		color: $white-1;
+    border: 2px solid $green-2;
+    &:hover {
+			background-color: $green-2;
+		}
+		&:active {
+			color: $black-1;
+			background-color: $white-1;
+			border: 2px solid $black-1;
+		}
+	}
 	
 	.disabled {
 		text-transform: uppercase;
