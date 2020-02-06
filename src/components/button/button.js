@@ -4,7 +4,7 @@ import './button.scss'
 
 function Button(props) {
 
-	const cls = `bgBlue	fontBlack pad8 width100 radius15 ${props.type}`.trim();
+	const cls = `pad8 width100 radius15 ${props.type}`.trim();
 
   return (
     <div className='button'>
