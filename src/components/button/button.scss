@@ -15,9 +15,7 @@
 			background-color: $blue-2;
 		}
 		&:active {
-			color: $black-1;
-			background-color: $white-1;
-			border: 2px solid $black-1;
+			color: $white-2;
 		}
 	}
 
@@ -31,9 +29,7 @@
 			background-color: $grey-2;
 		}
 		&:active {
-			color: $black-1;
-			background-color: $white-1;
-			border: 2px solid $black-1;
+			color: $white-2;
 		}
 	}
 
@@ -47,9 +43,21 @@
 			background-color: $green-2;
 		}
 		&:active {
-			color: $black-1;
-			background-color: $white-1;
-			border: 2px solid $black-1;
+			color: $white-2;
+		}
+	}
+
+	.danger {
+		text-transform: uppercase;
+		font-weight: bold;
+		background-color: $red-1;
+		color: $white-1;
+    border: 2px solid $red-2;
+    &:hover {
+			background-color: $red-2;
+		}
+		&:active {
+			color: $white-2;
 		}
 	}
 	
