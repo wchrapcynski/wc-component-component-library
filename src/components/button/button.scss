@@ -1,71 +1,49 @@
-@import './../../styles/common.scss';
+@import "./../../styles/common.scss";
+
+@mixin button-template($color1, $color2) {
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: $color1;
+  color: $white-1;
+  border: 2px solid $color2;
+  &:hover {
+    color: $white-1;
+    background-color: $color2;
+  }
+  &:active {
+    color: $white-2;
+  }
+}
 
 .button {
   button:focus {
     outline: 0;
   }
   .primary {
-		text-transform: uppercase;
-		font-weight: bold;
-		background-color: $blue-1;
-		color: $white-1;
-    border: 2px solid $blue-2;
-    &:hover {
-			color: $white-1;
-			background-color: $blue-2;
-		}
-		&:active {
-			color: $white-2;
-		}
-	}
+    @include button-template($blue-1, $blue-2);
+  }
 
-	.secondary {
-		text-transform: uppercase;
-		font-weight: bold;
-		background-color: $grey-1;
-		color: $white-1;
-    border: 2px solid $grey-2;
-    &:hover {
-			background-color: $grey-2;
-		}
-		&:active {
-			color: $white-2;
-		}
-	}
+  .secondary {
+    @include button-template($grey-1, $grey-2)
+  }
 
-	.success {
-		text-transform: uppercase;
-		font-weight: bold;
-		background-color: $green-1;
-		color: $white-1;
-    border: 2px solid $green-2;
-    &:hover {
-			background-color: $green-2;
-		}
-		&:active {
-			color: $white-2;
-		}
-	}
+  .success {
+    @include button-template($green-1, $green-2)
+  }
 
-	.danger {
-		text-transform: uppercase;
-		font-weight: bold;
-		background-color: $red-1;
-		color: $white-1;
-    border: 2px solid $red-2;
-    &:hover {
-			background-color: $red-2;
-		}
-		&:active {
-			color: $white-2;
-		}
+  .danger {
+    @include button-template($red-1, $red-2)
+  }
+
+	.warning {
+    @include button-template($yellow-1, $yellow-2)
 	}
 	
-	.disabled {
-		text-transform: uppercase;
+  .disabled {
+    text-transform: uppercase;
     font-weight: bold;
-		color: rgba(150, 149, 149, 0.26);
-		background: rgba(0,0,0, 0.12);
-		border: 2px solid rgba(0,0,0, 0.12);
-	}
+    color: rgba(150, 149, 149, 0.26);
+    background: rgba(0, 0, 0, 0.12);
+    border: 2px solid rgba(0, 0, 0, 0.12);
+  }
 }
