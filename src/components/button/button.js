@@ -4,6 +4,7 @@ import './button.scss'
 
 function Button(props) {
 
+	// Default button styling. This can be changed as needed.
 	const buttonStyle = `pad8 width100 radius15 ${props.type}`.trim();
 
   return (
