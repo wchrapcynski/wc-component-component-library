@@ -1,5 +1,28 @@
 @import "./var.scss";
 
+@mixin button-template($color1, $color2, $font1, $font2) {
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: $color1;
+  color: $font1;
+  border: 2px solid $color2;
+  &:hover {
+    color: $font1;
+    background-color: $color2;
+  }
+  &:active {
+    color: $font2;
+  }
+}
+
+input:focus {
+	outline: 0;
+}
+
+button:focus {
+	outline: 0;
+}
+
 .pad8 {
   padding-top: 8px;
   padding-bottom: 8px;

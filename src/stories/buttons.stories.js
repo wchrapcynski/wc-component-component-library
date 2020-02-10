@@ -1,6 +1,6 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react';
-import Button from '../components/button/button'
+import Button from '../components/buttons/buttons'
 
 function onClickHandle() {
 	console.log("I have been clicked!")

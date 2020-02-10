@@ -1,8 +1,8 @@
 import React from "react";
 import './../../styles/common.scss'
-import './button.scss'
+import './buttons.scss'
 
-function Button(props) {
+function Buttons(props) {
 
 	// Default button styling. This can be changed as needed.
 	const buttonStyle = `pad8 width100 radius15 ${props.type}`.trim();
@@ -14,4 +14,4 @@ function Button(props) {
   );
 }
 
-export default Button;
+export default Buttons;

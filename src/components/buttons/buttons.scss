@@ -1,20 +1,5 @@
 @import "./../../styles/common.scss";
 
-@mixin button-template($color1, $color2, $font1, $font2) {
-  text-transform: uppercase;
-  font-weight: bold;
-  background-color: $color1;
-  color: $font1;
-  border: 2px solid $color2;
-  &:hover {
-    color: $font1;
-    background-color: $color2;
-  }
-  &:active {
-    color: $font2;
-  }
-}
-
 .button {
   button:focus {
     outline: 0;
