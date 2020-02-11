@@ -4,7 +4,7 @@
   input {
 		border: 2px solid $blue-2;
 		padding-left: 10px;
-		font-size: 1.1em;
+		font-size: $button-font
 }
   button {
     @include button-template($blue-1, $blue-2, $white-1, $white-2);
@@ -13,6 +13,5 @@
     border-bottom: 2px solid $blue-2;
 		border-left: 0;
 		font-size: $button-font;
-		font-weight: unset;
   }
 }
