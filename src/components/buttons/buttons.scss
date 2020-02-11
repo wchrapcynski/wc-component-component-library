@@ -37,7 +37,7 @@
 	}
 	
   .disabled {
-    font-size: 1.1em;
+    font-size: $button-font;
     color: rgba(150, 149, 149, 0.26);
     background: rgba(0, 0, 0, 0.12);
     border: 2px solid rgba(0, 0, 0, 0.12);

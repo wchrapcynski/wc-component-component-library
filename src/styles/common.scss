@@ -1,7 +1,7 @@
 @import "./var.scss";
 
 @mixin button-template($color1, $color2, $font1, $font2) {
-  font-size: 1.1em;
+  font-size: $button-font;
   background-color: $color1;
   color: $font1;
   border: 2px solid $color2;
@@ -20,6 +20,11 @@ input:focus {
 
 button:focus {
   outline: 0;
+}
+
+.pad2 {
+	padding-top: 2px;
+	padding-bottom: 2px;
 }
 
 .pad4 {
