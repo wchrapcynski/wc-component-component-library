@@ -1,6 +1,6 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react';
-import Forms from '../components/forms/forms'
+import SearchForm from '../components/forms/SearchForm'
 
 function onClickHandle(event) {
 	event.preventDefault();
@@ -9,4 +9,4 @@ function onClickHandle(event) {
 
 storiesOf("Forms", module)
 	.add("Forms - Search", () => 
-		<Forms inputType="test" formType="search" onClickHandle={onClickHandle} buttonText="Search"/>)
+		<SearchForm inputType="text" formType="search" onClickHandle={onClickHandle} buttonText="Search"/>)	
