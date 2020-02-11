@@ -2,30 +2,17 @@
 
 .forms-search {
   input {
-    height: 25px;
-    width: 200px;
-    border: 1px solid $black-1;
-    border-radius: 5px 0 0 5px;
-    -webkit-border-radius: 5px 0 0 5px;
-    -moz-border-radius: 5px 0 0 5px;
-    -ms-border-radius: 5px 0 0 5px;
-    -o-border-radius: 5px 0 0 5px;
-  }
+		border: 2px solid $blue-2;
+		padding-left: 10px;
+		font-size: 1.1em;
+}
   button {
-    height: 29px;
-    width: 75px;
     @include button-template($blue-1, $blue-2, $white-1, $white-2);
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 0;
-    border-top: 1px solid $black-1;
-    border-right: 1px solid $black-1;
-    border-bottom: 1px solid $black-1;
-    border-left: 0;
-    border-radius: 0 5px 5px 0;
-    -webkit-border-radius: 0 5px 5px 0;
-    -moz-border-radius: 0 5px 5px 0;
-    -ms-border-radius: 0 5px 5px 0;
-    -o-border-radius: 0 5px 5px 0;
-	}
+    border-top: 2px solid $blue-2;
+    border-right: 2px solid $blue-2;
+    border-bottom: 2px solid $blue-2;
+		border-left: 0;
+		font-size: 1.1em;
+		font-weight: unset;
+  }
 }

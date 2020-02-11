@@ -1,8 +1,7 @@
 @import "./var.scss";
 
 @mixin button-template($color1, $color2, $font1, $font2) {
-  text-transform: uppercase;
-  font-weight: bold;
+  font-size: 1.1em;
   background-color: $color1;
   color: $font1;
   border: 2px solid $color2;
@@ -16,11 +15,16 @@
 }
 
 input:focus {
-	outline: 0;
+  outline: 0;
 }
 
 button:focus {
-	outline: 0;
+  outline: 0;
+}
+
+.pad4 {
+	padding-top: 4px;
+	padding-bottom: 4px;
 }
 
 .pad8 {
@@ -32,14 +36,38 @@ button:focus {
   width: 100px;
 }
 
+.width125 {
+	width: 125px;
+}
+
 .width150 {
   width: 150px;
 }
 
+.width200 {
+	width: 200px;
+}
+
 .radius15 {
-	border-radius: 15px;
-	-webkit-border-radius: 15px;
-	-moz-border-radius: 15px;
-	-ms-border-radius: 15px;
-	-o-border-radius: 15px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.radius15-left {
+  border-radius: 15px 0 0 15px;
+  -webkit-border-radius: 15px 0 0 15px;
+  -moz-border-radius: 15px 0 0 15px;
+  -ms-border-radius: 15px 0 0 15px;
+  -o-border-radius: 15px 0 0 15px;
+}
+
+.radius15-right {
+  border-radius: 0 15px 15px 0;
+  -webkit-border-radius: 0 15px 15px 0;
+  -moz-border-radius: 0 15px 15px 0;
+  -ms-border-radius: 0 15px 15px 0;
+  -o-border-radius: 0 15px 15px 0;
 }
