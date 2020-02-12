@@ -4,18 +4,21 @@ import "./forms.scss";
 
 function SearchForm(props) {
 
+  const inputClass = props.connected ? 'radius15-left' : 'radius15 margin15-right';
+  const buttonClass = props.connected ? 'radius15-right' : 'radius15';
+
   return (
-    <form className={`forms-${props.formType}`}>
+    <form className="forms-search">
       <input
-        className='radius15 width200 pad4 margin15-right'
-        type={props.inputType}
-        name={props.formType}
+        className={`width200 pad4 ${inputClass}`}
+        type="text"
+        name="search"
         onChange={props.onChangeHandle}
       />
       <button
         onClick={props.onClickHandle}
-        name={props.type}
-        className='radius15 width100 pad4'>
+        name="search"
+        className={`width100 pad4 ${buttonClass}`}>
         {props.buttonText}
       </button>
     </form>
