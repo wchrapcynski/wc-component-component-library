@@ -5,7 +5,7 @@
 }
 
 @mixin button-template($color1, $color2, $font1, $font2) {
-  font-size: $font-size-1;
+	font-size: $font-size-1;
   background-color: $color1;
   color: $font1;
   border: 2px solid $color2;

@@ -1,18 +1,16 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react';
+import { action } from "@storybook/addon-actions";
 import Button from '../components/buttons/Buttons'
 
-function onClickHandle() {
-	console.log("I have been clicked!")
-}
 
 storiesOf("Button", module)
-	.add("Button - primary", () => <Button type="primary" onClickHandle={onClickHandle}>Primary</Button>)
-	.add("Button - secondary", () => <Button type="secondary" onClickHandle={onClickHandle}>Secondary</Button>)
-	.add("Button - success", () => <Button type="success" onClickHandle={onClickHandle}>Success</Button>)
-	.add("Button - danger", () => <Button type="danger" onClickHandle={onClickHandle}>Danger</Button>)
-	.add("Button - warning", () => <Button type="warning" onClickHandle={onClickHandle}>Warning</Button>)
-	.add("Button - info", () => <Button type="info" onClickHandle={onClickHandle}>Info</Button>)
-	.add("Button - light", () => <Button type="light" onClickHandle={onClickHandle}>Light</Button>)
-	.add("Button - dark", () => <Button type="dark" onClickHandle={onClickHandle}>Dark</Button>)
-	.add("Button - disabled", () => <Button type="disabled" onClickHandle={onClickHandle}>Disabled</Button>)
+	.add("Button - primary", () => <Button type="primary" onClickHandle={action('Clicked!')}>Primary</Button>)
+	.add("Button - secondary", () => <Button type="secondary" onClickHandle={action('Clicked!')}>Secondary</Button>)
+	.add("Button - success", () => <Button type="success" onClickHandle={action('Clicked!')}>Success</Button>)
+	.add("Button - danger", () => <Button type="danger" onClickHandle={action('Clicked!')}>Danger</Button>)
+	.add("Button - warning", () => <Button type="warning" onClickHandle={action('Clicked!')}>Warning</Button>)
+	.add("Button - info", () => <Button type="info" onClickHandle={action('Clicked!')}>Info</Button>)
+	.add("Button - light", () => <Button type="light" onClickHandle={action('Clicked!')}>Light</Button>)
+	.add("Button - dark", () => <Button type="dark" onClickHandle={action('Clicked!')}>Dark</Button>)
+	.add("Button - disabled", () => <Button type="disabled" onClickHandle={action('Clicked!')}>Disabled</Button>)
