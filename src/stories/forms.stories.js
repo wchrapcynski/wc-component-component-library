@@ -5,7 +5,12 @@ import SearchForm from "../components/forms/SearchForm";
 import EmailForm from "../components/forms/EmailForm";
 
 storiesOf("Forms", module)
-  .add("Search", () => <SearchForm onClickHandle={action("Clicked!")} />)
+  .add("Search", () => (
+    <SearchForm
+      onClickHandle={action("Clicked!")}
+      onChangeHandle={action("Text Changed!")}
+    />
+  ))
   .add("Email", () => (
     <EmailForm
       onClickHandle={action("Clicked!")}
