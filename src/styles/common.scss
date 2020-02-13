@@ -1,7 +1,11 @@
 @import "./var.scss";
 
+* {
+	outline: 0;
+}
+
 @mixin button-template($color1, $color2, $font1, $font2) {
-  font-size: $button-font;
+  font-size: $font-size-1;
   background-color: $color1;
   color: $font1;
   border: 2px solid $color2;
@@ -12,14 +16,6 @@
   &:active {
     color: $font2;
   }
-}
-
-input:focus {
-  outline: 0;
-}
-
-button:focus {
-  outline: 0;
 }
 
 .pad2 {
@@ -35,6 +31,19 @@ button:focus {
 .pad8 {
   padding-top: 8px;
   padding-bottom: 8px;
+}
+
+.pad4-left {
+	padding-left: 4px;
+}
+
+.pad8-left {
+	padding-left: 8px;
+}
+
+.margin4 {
+	margin-top: 4px;
+	margin-bottom: 4px;
 }
 
 .width100 {
@@ -63,6 +72,14 @@ button:focus {
 
 .margin15-right {
 	margin-right: 15px;
+}
+
+.radius5 {
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
 }
 
 .radius15 {

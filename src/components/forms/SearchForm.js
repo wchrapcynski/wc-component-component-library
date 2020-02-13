@@ -4,7 +4,7 @@ import "./forms.scss";
 
 function SearchForm(props) {
 
-  const inputClass = props.connected ? 'radius15-left' : 'radius15 margin15-right';
+  const inputClass = props.connected ? 'radius15-left pad8-left' : 'radius5 margin15-right pad4-left';
   const buttonClass = props.connected ? 'radius15-right' : 'radius15';
 
   return (

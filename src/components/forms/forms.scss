@@ -3,8 +3,7 @@
 .forms-search {
   input {
 		border: 2px solid $blue-2;
-		padding-left: 10px;
-		font-size: $button-font
+		font-size: $font-size-1;
 }
   button {
     @include button-template($blue-1, $blue-2, $white-1, $white-2);
@@ -12,6 +11,25 @@
     border-right: 2px solid $blue-2;
     border-bottom: 2px solid $blue-2;
 		border-left: 0;
-		font-size: $button-font;
+		font-size: $font-size-1
   }
+}
+
+.forms-email {
+	display: flex;
+	flex-direction: column;
+	input {
+		border: 2px solid $blue-2;
+		font-size: $font-size-1;
+	}
+	textarea {
+		border: 2px solid $blue-2;
+		width: 298px;
+		font-size: $font-size-1;
+		resize: none;
+	}
+	button {
+		@include button-template($blue-1, $blue-2, $white-1, $white-2);
+		font-size: $font-size-1
+	}
 }
