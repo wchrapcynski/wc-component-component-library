@@ -1,7 +1,7 @@
 import React from "react";
 import "./../../styles/common.scss";
 import "./forms.scss";
-import Button from "../Buttons/Buttons";
+import Button from "../buttons/buttons";
 
 function SearchForm(props) {
   return (
