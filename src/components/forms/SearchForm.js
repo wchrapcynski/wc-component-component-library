@@ -8,7 +8,7 @@ function SearchForm(props) {
     <div className='forms-search'>
       <form>
         <input
-          className='width200 pad4 radius5 margin15-right pad4-left'
+          className='width300 pad4 radius5 margin15-right pad4-left'
           type='text'
           name='search'
           onChange={props.onChangeHandle}
