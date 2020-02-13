@@ -1,8 +1,8 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
-import SearchForm from "../components/forms/SearchForm";
-import EmailForm from "../components/forms/EmailForm";
+import SearchForm from "./SearchForm";
+import EmailForm from "./EmailForm";
 
 storiesOf("Forms", module)
   .add("Search", () => (
