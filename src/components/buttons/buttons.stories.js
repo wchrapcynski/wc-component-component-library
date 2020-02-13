@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from "@storybook/addon-actions";
-import Button from './Buttons'
+import Button from './Buttons.js'
 
 storiesOf("Button", module)
 	.add("Button - primary", () => <Button type="primary" onClickHandle={action('Clicked!')}>Primary</Button>)
