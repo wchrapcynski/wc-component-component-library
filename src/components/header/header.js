@@ -1,14 +1,19 @@
 import React from "react";
 import "./header.scss";
+import Button from "../buttons/buttons";
 
-function Header() {
+function Header(props) {
+  const navbarDisplay = props.navbarItems.map((items, key) => {
+    return (
+      <Button key={key} type="primary-tab" onClickHandle={props.onClickHandle}>
+        {items}
+      </Button>
+    );
+  });
+
   return (
     <div className="header radius5-top">
-      <div className="navbar">
-        <button className="menu-item radius5-top pad4">Home</button>
-        <button className="menu-item-selected radius5-top pad4">About</button>
-        <button className="menu-item radius5-top pad4">Contact</button>
-      </div>
+      <div className="navbar">{navbarDisplay}</div>
     </div>
   );
 }
