@@ -34,7 +34,39 @@
 
 	.dark {
 		@include button-template($black-1, $black-2, $white-1, $white-2)
+  }
+
+  .primary-tab {
+    @include tab-template($blue-1, $blue-2, $white-1, $white-2);
+  }
+
+  .secondary-tab {
+    @include tab-template($grey-1, $grey-2, $white-1, $white-2)
+  }
+
+  .success-tab {
+    @include tab-template($green-1, $green-2, $white-1, $white-2)
+  }
+
+  .danger-tab {
+    @include tab-template($red-1, $red-2, $white-1, $white-2)
+  }
+
+	.warning-tab {
+    @include tab-template($yellow-1, $yellow-2, $white-1, $white-2)
 	}
+
+	.info-tab{
+    @include tab-template($aqua-1, $aqua-2, $white-1, $white-2)
+	}
+
+	.light-tab {
+    @include tab-template($white-1, $white-2, $grey-1, $grey-2)
+	}
+
+	.dark-tab {
+		@include tab-template($black-1, $black-2, $white-1, $white-2)
+  }
 	
   .disabled {
     font-size: $font-size-1;
@@ -42,4 +74,16 @@
     background: rgba(0, 0, 0, 0.12);
     border: 2px solid rgba(0, 0, 0, 0.12);
   }
+
+  .disabled-tab {
+    font-size: $font-size-1;
+    color: rgba(150, 149, 149, 0.26);
+    background: rgba(0, 0, 0, 0.12);
+    border: 2px solid rgba(0, 0, 0, 0.12);
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
+}
 }

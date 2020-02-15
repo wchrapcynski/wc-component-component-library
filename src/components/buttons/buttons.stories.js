@@ -13,7 +13,16 @@ const buttonTypes = {
   info: "info",
   light: "light",
   dark: "dark",
-  disabled: "disabled"
+  disabled: "disabled",
+  primaryTab: "primary-tab",
+  secondaryTab: "secondary-tab",
+  successTab: "success-tab",
+  dangerTab: "danger-tab",
+  warningTab: "warning-tab",
+  infoTab: "info-tab",
+  lightTab: "light-tab",
+  darkTab: "dark-tab",
+  disabledTab: "disabled-tab"
 };
 
 const defaultType = "primary";
@@ -26,4 +35,4 @@ storiesOf("Buttons", module)
       onClickHandle={action("Clicked!")}>
       {text("Button Text", "Submit")}
     </Buttons>
-  ))
+  ));

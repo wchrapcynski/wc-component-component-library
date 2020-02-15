@@ -23,6 +23,25 @@
   }
 }
 
+@mixin tab-template($color1, $color2, $font1, $font2) {
+  font-size: $font-size-1;
+  background-color: $color1;
+  color: $font1;
+  border: 2px solid $color2;
+  &:hover {
+    color: $font1;
+    background-color: $color2;
+  }
+  &:active {
+    color: $font2;
+  }
+  border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -ms-border-radius: 5px 5px 0 0;
+  -o-border-radius: 5px 5px 0 0;
+}
+
 .pad2 {
   padding-top: 2px;
   padding-bottom: 2px;
