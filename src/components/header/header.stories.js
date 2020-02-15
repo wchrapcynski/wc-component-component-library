@@ -6,5 +6,5 @@ import Header from "./header";
 const navbarItems = ["Home", "About", "Contact"]
 
 storiesOf("Header", module).add("Header", () => (
-  <Header navbarItems={navbarItems} onClickHandle={action("Clicked!")} />
+  <Header navbarItems={navbarItems} onClickHandle={action("Clicked!")} title="Title" />
 ));

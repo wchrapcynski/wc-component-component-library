@@ -13,6 +13,7 @@ function Header(props) {
 
   return (
     <div className="header radius5-top">
+      <div className="title">{props.title}</div>
       <div className="navbar">{navbarDisplay}</div>
     </div>
   );
