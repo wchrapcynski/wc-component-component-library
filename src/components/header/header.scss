@@ -1,0 +1,21 @@
+@import "./../../styles/common.scss";
+
+.header {
+  height: 150px;
+  margin: 5px 5px 0 5px;
+  padding: 0 10px 0 10px;
+  display: flex;
+  align-items: flex-end;
+  position: static;
+  background-color: $white-2;
+
+  .menu-item {
+    margin-right: 10px;
+    @include button-template($blue-1, $blue-2, $white-1, $white-2);
+  }
+
+  .menu-item-selected {
+    margin-right: 10px;
+    @include button-template($grey-1, $grey-2, $white-1, $white-2);
+  }
+}
