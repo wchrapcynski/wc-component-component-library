@@ -10,4 +10,4 @@ This is a library that I am currently building that will contain reusable ReactJ
 
 ### Installation
 
-After you download the repo, you can use `npm install` to download any dependencies that are necessary. The project currently uses Storybook to display the components. You can use `npm run storybook` to display them on localhost.
+After you download the repo, you can use `npm install` to download any dependencies that are necessary. The project currently uses Storybook to display the components. You can use `npm run storybook` to display them on localhost. You can also display a demo of the library on localhost with `npm start`.
