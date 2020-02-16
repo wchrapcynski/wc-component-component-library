@@ -9,7 +9,7 @@ storiesOf("Header", module)
   .add("Header", () => (
     <Header
       title={text("Header Title", "Title")}
-      navbarItems={array("Tab Names", ["Home", "About", "Contact"])}
+      navbarItems={array("Tab Names", ["Home", "About", "Contact"], ";")}
       onClickHandle={action("Clicked!")}
     />
   ));
