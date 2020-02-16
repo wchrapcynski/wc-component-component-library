@@ -1,13 +1,16 @@
 import React from "react";
 import "./header.scss";
+import { NavLink } from "react-router-dom";
 import Button from "../buttons/buttons";
 
 function Header(props) {
   const navbarDisplay = props.navbarItems.map((items, key) => {
     return (
-      <Button key={key} type="primary-tab" navbar onClickHandle={props.onClickHandle}>
-        {items}
-      </Button>
+      <NavLink to={items} key={key}>
+        <Button type="primary-tab" navbar onClickHandle={props.onClickHandle}>
+          {items}
+        </Button>
+      </NavLink>
     );
   });
 
