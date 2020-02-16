@@ -8,8 +8,8 @@ storiesOf("Header", module)
   .addDecorator(withKnobs)
   .add("Header", () => (
     <Header
+      title={text("Header Title", "Title")}
       navbarItems={array("Tab Names", ["Home", "About", "Contact"])}
       onClickHandle={action("Clicked!")}
-      title={text("Header Title", "Title")}
     />
   ));

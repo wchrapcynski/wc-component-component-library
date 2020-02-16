@@ -10,7 +10,7 @@ function EmailForm(props) {
         All fields are required:
         <input
           className='width300 pad4 margin4 radius5 pad4-left'
-          type='email'
+          type='text'
           name='name'
           placeholder='Name'
           onChange={props.onChangeHandleName}
@@ -18,9 +18,9 @@ function EmailForm(props) {
         />
         <input
           className='width300 pad4 margin4 radius5 pad4-left'
-          type='text'
+          type='email'
           name='address'
-          placeholder='Address'
+          placeholder='Email Address'
           onChange={props.onChangeHandleEmail}
         />
         <textarea
