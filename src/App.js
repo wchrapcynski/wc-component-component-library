@@ -1,8 +1,4 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
-import HomePage from "./pages/homepage";
-import AboutPage from "./pages/aboutpage";
-import ContactPage from "./pages/contactpage";
 import "./App.css";
 import Header from "./components/header/header";
 
@@ -24,19 +20,13 @@ function App() {
   }
 
   return (
-    <BrowserRouter>
       <div className="App">
         <Header
           navbarItems={navbarItems}
           onClickHandle={navbarOnClickHandle}
           title="Title"
         />
-        <Route path="/" exact component={HomePage} />
-        <Route path="/Home" exact component={HomePage} />
-        <Route path="/About" exact component={AboutPage} />
-        <Route path="/Contact" exact component={ContactPage} />
       </div>
-    </BrowserRouter>
   );
 }
 
