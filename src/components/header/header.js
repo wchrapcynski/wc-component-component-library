@@ -5,13 +5,15 @@ import Button from "../buttons/buttons";
 function Header(props) {
   const navbarDisplay = props.navbarItems.map((items, key) => {
     return (
-      <Button
-        key={key}
-        type="primary-tab"
-        navbar
-        onClickHandle={props.onClickHandle}>
-        {items}
-      </Button>
+      <a href={`#${items}`}>
+        <Button
+          key={key}
+          type="primary-tab"
+          navbar
+          onClickHandle={props.onClickHandle}>
+          {items}
+        </Button>
+      </a>
     );
   });
 

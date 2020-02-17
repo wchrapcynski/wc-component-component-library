@@ -1,0 +1,14 @@
+.Home {
+  height: 500px;
+  background-color: yellow;
+}
+
+.About {
+  height: 500px;
+  background-color: red;
+}
+
+.Contact {
+  height: 500px;
+  background-color: blue;
+}
