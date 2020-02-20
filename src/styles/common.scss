@@ -114,6 +114,14 @@
   -o-border-radius: 5px 5px 0 0;
 }
 
+.radius5-bottom {
+  border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  -ms-border-radius: 0 0 5px 5px;
+  -o-border-radius: 0 0 5px 5px;
+}
+
 .radius15 {
   border-radius: 15px;
   -webkit-border-radius: 15px;
