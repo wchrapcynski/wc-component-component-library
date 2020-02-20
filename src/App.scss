@@ -4,18 +4,37 @@
   box-sizing: border-box;
   margin: 0 40px;
   border: 1px solid $white-2;
-  
+
+  .bubble1 {
+    background-color: $white-2;
+    height: calc(100% - 100px);
+    width: calc(100% - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .bubble2 {
+    background-color: $white-1;
+    height: calc(100% - 100px);
+    width: calc(100% - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
   .Home {
     height: calc(100vh - 150px);
-    padding: 20px;
     background-color: $white-1;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
 
   .About {
-    height: 100vh;
+    height: calc(100vh - 40px);
     padding: 20px;
     background-color: $white-2;
     display: flex;
@@ -24,7 +43,7 @@
   }
 
   .Contact {
-    height: 100vh;
+    height: calc(100vh - 40px);
     padding: 20px;
     background-color: $white-1;
     display: flex;
