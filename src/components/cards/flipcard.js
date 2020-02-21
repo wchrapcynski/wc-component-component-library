@@ -7,9 +7,8 @@ function FlipCard(props) {
       <div className="flip-card-inner">
         <div className="flip-card-front">
           <img
-            src="img_avatar.png"
+            src={require("../../images/image1.png")}
             alt="Avatar"
-            style="width:300px;height:300px;"
           />
         </div>
         <div className="flip-card-back">
