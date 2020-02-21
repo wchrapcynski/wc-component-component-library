@@ -8,7 +8,6 @@ function App() {
   const websiteData = require("./data/data.json");
 
   const navbarItems = websiteData.pages;
-  let navbarTabs = [];
 
   function navbarOnClickHandle(event) {}
 
