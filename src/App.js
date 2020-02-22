@@ -3,6 +3,7 @@ import "./App.scss";
 import "./styles/common.scss";
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
+import SectionCard from "./components/cards/sectioncard";
 
 function App() {
   const websiteData = require("./data/data.json");
@@ -21,30 +22,32 @@ function App() {
         />
       </div>
       <div className="middle">
-        <div className="Home">
-          <div className="bubble1 radius15">
-            <div>Home Section</div>
-          </div>
-        </div>
-        <div className="About" id="About">
-          <div className="bubble2 radius15">
-            <div>About Section</div>
-            <div>
-              <a href="#Home">To Top</a>
-            </div>
-          </div>
-        </div>
-        <div className="Contact" id="Contact">
-          <div className="bubble1 radius15">
-            <div>Contact Section</div>
-            <div>
-              <a href="#Home">To Top</a>
-            </div>
-          </div>
-        </div>
+        <SectionCard
+          backgroundColorType="backgroundWhite1"
+          cardColorType="backgroundWhite2"
+          boxSize="boxSizeFullScreenMargin100"
+          description="Home Section"
+          sectionLocation="sectionTop"
+        />
+        <SectionCard
+          backgroundColorType="backgroundWhite2"
+          cardColorType="backgroundWhite1"
+          boxSize="boxSizeFullScreenMargin100"
+          description="About Section"
+          sectionLocation="sectionFull"
+          id="About"
+        />
+        <SectionCard
+          backgroundColorType="backgroundWhite1"
+          cardColorType="backgroundWhite2"
+          boxSize="boxSizeFullScreenMargin100"
+          description="Contact Section"
+          sectionLocation="sectionFull"
+          id="Contact"
+        />
       </div>
       <div className="bottom">
-        <Footer />
+        <Footer footerText="This is the footer" />
       </div>
     </div>
   );

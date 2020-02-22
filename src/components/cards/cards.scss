@@ -32,10 +32,10 @@
         text-decoration: none;
         color: $white-2;
         transition: all 0.3s;
-          -webkit-transition: all 0.3s;
-          -moz-transition: all 0.3s;
-          -ms-transition: all 0.3s;
-          -o-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
         &:hover {
           letter-spacing: 0.7px;
           transition: all 0.3s;
@@ -43,7 +43,7 @@
           -moz-transition: all 0.3s;
           -ms-transition: all 0.3s;
           -o-transition: all 0.3s;
-}
+        }
       }
     }
     .flip-card-front {
@@ -65,5 +65,16 @@
       -ms-transform: rotateY(180deg);
       -o-transform: rotateY(180deg);
     }
+  }
+}
+.sectionCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }

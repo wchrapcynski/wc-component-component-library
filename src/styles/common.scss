@@ -3,7 +3,7 @@
 * {
   outline: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  html{
+  html {
     box-sizing: border-box;
     margin: 0 auto;
   }
@@ -40,6 +40,16 @@
   -moz-border-radius: 5px 5px 0 0;
   -ms-border-radius: 5px 5px 0 0;
   -o-border-radius: 5px 5px 0 0;
+}
+
+@mixin sectionCard($backgroundColor) {
+  height: calc(100% - 100px);
+  width: calc(100% - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: $backgroundColor;
 }
 
 .pad2 {
@@ -90,6 +100,24 @@
   width: 300px;
 }
 
+.sectionFull {
+  height: 100vh;
+}
+
+.sectionTop {
+  height: calc(100vh - 150px);
+}
+
+.boxSizeFullScreenMargin100 {
+  height: calc(100% - 100px);
+  width: calc(100% - 100px);
+}
+
+.boxSize300x600 {
+  height: 300px;
+  width: 600px;
+}
+
 .margin15-left {
   margin-left: 15px;
 }
@@ -130,7 +158,6 @@
   -o-border-radius: 15px;
 }
 
-
 .radius15-left {
   border-radius: 15px 0 0 15px;
   -webkit-border-radius: 15px 0 0 15px;
@@ -145,4 +172,12 @@
   -moz-border-radius: 0 15px 15px 0;
   -ms-border-radius: 0 15px 15px 0;
   -o-border-radius: 0 15px 15px 0;
+}
+
+.backgroundWhite1 {
+  background-color: $white-1;
+}
+
+.backgroundWhite2 {
+  background-color: $white-2;
 }

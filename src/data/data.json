@@ -1,5 +1,6 @@
 
   {
     "pages": ["About", "Contact"],
-    "flipCardtext":["Flip Card Title", "This is the flip card discription text", "http://magicaltech.xyz"]
+    "flipCardText":["Flip Card Title", "This is the flip card discription text", "http://magicaltech.xyz"],
+    "footerText": "This is the footer"
   }
