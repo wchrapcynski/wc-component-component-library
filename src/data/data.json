@@ -1,7 +1,16 @@
-
-  {
-    "tabs": ["About", "Contact"],
-    "sections": [["Home Section", "Home"], ["About Section", "About"], ["Contact Section", "Contact"]],
-    "flipCardText":[["Flip Card Title", "This is the flip card discription text", "http://magicaltech.xyz"]],
-    "footerText": "This is the footer"
-  }
+{
+  "tabs": ["About", "Contact"],
+  "sections": [
+    { "description": "Home Section", "id": "Home" },
+    { "description": "About Section", "id": "About" },
+    { "description": "Contact Section", "id": "Contact" }
+  ],
+  "flipCardText": [
+    [
+      "Flip Card Title",
+      "This is the flip card discription text",
+      "http://magicaltech.xyz"
+    ]
+  ],
+  "footerText": "This is the footer"
+}

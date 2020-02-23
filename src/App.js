@@ -7,19 +7,16 @@ import SectionCard from "./components/cards/sectioncard";
 
 function App() {
   const websiteData = require("./data/data.json");
-
   const navbarItems = websiteData.tabs;
-
   const displaySections = websiteData.sections.map((data, key) => {
-    console.log(data)
     return (
       <SectionCard
         key={key}
         backgroundColorType="backgroundWhite1"
         cardColorType="backgroundWhite2"
         boxSize="boxSizeFullScreenMargin100"
-        description={data[0]}
-        id={data[1]}
+        description={data.description}
+        id={data.id}
         sectionLocation="sectionTop"
         toTop={key}
       />
