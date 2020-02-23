@@ -1,7 +1,7 @@
 
   {
     "tabs": ["About", "Contact"],
-    "sections": [["Home Section"], ["About Section"], ["Contact Section"]],
+    "sections": [["Home Section", "Home"], ["About Section", "About"], ["Contact Section", "Contact"]],
     "flipCardText":[["Flip Card Title", "This is the flip card discription text", "http://magicaltech.xyz"]],
     "footerText": "This is the footer"
   }

@@ -9,7 +9,22 @@ function App() {
   const websiteData = require("./data/data.json");
 
   const navbarItems = websiteData.tabs;
-  const sectionTitles = websiteData.sections;
+
+  const displaySections = websiteData.sections.map((data, key) => {
+    console.log(data)
+    return (
+      <SectionCard
+        key={key}
+        backgroundColorType="backgroundWhite1"
+        cardColorType="backgroundWhite2"
+        boxSize="boxSizeFullScreenMargin100"
+        description={data[0]}
+        id={data[1]}
+        sectionLocation="sectionTop"
+        toTop={key}
+      />
+    );
+  });
 
   function navbarOnClickHandle(event) {}
 
@@ -23,31 +38,7 @@ function App() {
         />
       </div>
       <div className="middle">
-        <SectionCard
-          backgroundColorType="backgroundWhite1"
-          cardColorType="backgroundWhite2"
-          boxSize="boxSizeFullScreenMargin100"
-          description={sectionTitles[0][0]}
-          sectionLocation="sectionTop"
-        />
-        <SectionCard
-          backgroundColorType="backgroundWhite1"
-          cardColorType="backgroundWhite2"
-          boxSize="boxSizeFullScreenMargin100"
-          description={sectionTitles[1][0]}
-          sectionLocation="sectionFull"
-          id="About"
-          toTop
-        />
-        <SectionCard
-          backgroundColorType="backgroundWhite1"
-          cardColorType="backgroundWhite2"
-          boxSize="boxSizeFullScreenMargin100"
-          description={sectionTitles[2][0]}
-          sectionLocation="sectionFull"
-          id="Contact"
-          toTop
-        />
+        {displaySections}
       </div>
       <div className="bottom">
         <Footer footerText="This is the footer" />
