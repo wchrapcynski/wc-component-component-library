@@ -30,12 +30,13 @@ function App() {
           sectionLocation="sectionTop"
         />
         <SectionCard
-          backgroundColorType="backgroundWhite2"
-          cardColorType="backgroundWhite1"
+          backgroundColorType="backgroundWhite1"
+          cardColorType="backgroundWhite2"
           boxSize="boxSizeFullScreenMargin100"
           description="About Section"
           sectionLocation="sectionFull"
           id="About"
+          toTop
         />
         <SectionCard
           backgroundColorType="backgroundWhite1"
@@ -44,6 +45,7 @@ function App() {
           description="Contact Section"
           sectionLocation="sectionFull"
           id="Contact"
+          toTop
         />
       </div>
       <div className="bottom">

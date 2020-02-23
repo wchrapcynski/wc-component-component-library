@@ -67,7 +67,7 @@
     }
   }
 }
-.sectionCard {
+.section-card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,5 +76,20 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    .card-header {
+      height: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card-body {
+      height: 80%;
+    }
+    .card-footer {
+      height: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
