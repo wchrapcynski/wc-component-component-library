@@ -1,6 +1,7 @@
 
   {
-    "pages": ["About", "Contact"],
-    "flipCardText":["Flip Card Title", "This is the flip card discription text", "http://magicaltech.xyz"],
+    "tabs": ["About", "Contact"],
+    "sections": [["Home Section"], ["About Section"], ["Contact Section"]],
+    "flipCardText":[["Flip Card Title", "This is the flip card discription text", "http://magicaltech.xyz"]],
     "footerText": "This is the footer"
   }

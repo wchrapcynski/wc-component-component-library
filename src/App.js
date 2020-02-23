@@ -8,7 +8,8 @@ import SectionCard from "./components/cards/sectioncard";
 function App() {
   const websiteData = require("./data/data.json");
 
-  const navbarItems = websiteData.pages;
+  const navbarItems = websiteData.tabs;
+  const sectionTitles = websiteData.sections;
 
   function navbarOnClickHandle(event) {}
 
@@ -26,14 +27,14 @@ function App() {
           backgroundColorType="backgroundWhite1"
           cardColorType="backgroundWhite2"
           boxSize="boxSizeFullScreenMargin100"
-          description="Home Section"
+          description={sectionTitles[0][0]}
           sectionLocation="sectionTop"
         />
         <SectionCard
           backgroundColorType="backgroundWhite1"
           cardColorType="backgroundWhite2"
           boxSize="boxSizeFullScreenMargin100"
-          description="About Section"
+          description={sectionTitles[1][0]}
           sectionLocation="sectionFull"
           id="About"
           toTop
@@ -42,7 +43,7 @@ function App() {
           backgroundColorType="backgroundWhite1"
           cardColorType="backgroundWhite2"
           boxSize="boxSizeFullScreenMargin100"
-          description="Contact Section"
+          description={sectionTitles[2][0]}
           sectionLocation="sectionFull"
           id="Contact"
           toTop
