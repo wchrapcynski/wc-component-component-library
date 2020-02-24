@@ -77,6 +77,7 @@
     align-items: center;
     flex-direction: column;
     color: $black-2;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
     hr {
       background-image: linear-gradient(to right, $white-2, $black-2, $white-2);
       height: 1px;
@@ -90,10 +91,11 @@
       justify-content: space-between;
       align-items: flex-end;
       .card-header-item {
-        margin: 0 30px;
         img {
           height: 35px;
         }
+        margin: 0 30px;
+        font-weight: bold;
       }
     }
     .card-body {
