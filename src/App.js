@@ -12,8 +12,8 @@ function App() {
     return (
       <SectionCard
         key={key}
-        backgroundColorType="backgroundWhite1"
-        cardColorType="backgroundWhite2"
+        backgroundColorType="backgroundWhite2"
+        cardColorType="backgroundWhite1"
         boxSize="boxSizeFullScreenMargin100"
         description={data.description}
         id={data.id}
