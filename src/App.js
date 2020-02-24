@@ -17,7 +17,7 @@ function App() {
         boxSize="boxSizeFullScreenMargin100"
         description={data.description}
         id={data.id}
-        sectionLocation="sectionTop"
+        sectionLocation={key ? "sectionFull" : "sectionTop"}
         toTop={key}
       />
     );
