@@ -1,6 +1,7 @@
 import React from "react";
 import "./cards.scss";
 import "../../styles/common.scss";
+import ToTopIcon from "../../images/to_top.svg"
 
 function SectionCard(props) {
   return (
@@ -13,7 +14,7 @@ function SectionCard(props) {
             {props.description}
           </div>
           <div className="card-header-item">
-            {props.toTop ? <a href="#Top">To Top</a> : ""}
+            {props.toTop ? <a href="#Top"><img src={ToTopIcon} alt="to-top" /></a> : ""}
           </div>
         </div>
         <hr />

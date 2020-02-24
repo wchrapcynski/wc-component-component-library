@@ -76,8 +76,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    color: $black-2;
     hr {
-      background-image: linear-gradient(to right, $white-2, $black-1, $white-2);
+      background-image: linear-gradient(to right, $white-2, $black-2, $white-2);
       height: 1px;
       width: 95%;
       border: 0;
@@ -90,6 +91,9 @@
       align-items: flex-end;
       .card-header-item {
         margin: 0 30px;
+        img {
+          height: 35px;
+        }
       }
     }
     .card-body {
