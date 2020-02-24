@@ -18,7 +18,7 @@ function SectionCard(props) {
           </div>
         </div>
         <hr />
-        <div className="card-body"></div>
+        <div className="card-body">{props.children}</div>
         <div className="card-footer"></div>
       </div>
     </div>

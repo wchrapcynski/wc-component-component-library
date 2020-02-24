@@ -5,12 +5,15 @@
     { "description": "About Section", "id": "About" },
     { "description": "Contact Section", "id": "Contact" }
   ],
-  "flipCardText": [
-    [
-      "Flip Card Title",
-      "This is the flip card discription text",
-      "http://magicaltech.xyz"
-    ]
+  "images": {
+    "bioimage": "image1.png"
+  },
+  "flipCards": [
+    {
+      "title": "Flip Card Title",
+      "description": "This is the flip card discription text",
+      "link": "http://magicaltech.xyz"
+    }
   ],
   "footerText": "This is the footer"
 }
