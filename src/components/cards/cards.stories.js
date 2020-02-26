@@ -19,7 +19,6 @@ storiesOf("Cards", module)
       cardColorType="backgroundWhite1"
       boxSize="boxSize300x600"
       description="This is a section"
-      sectionLocation="sectionFull"
       id="Home"
     />
   ));

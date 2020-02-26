@@ -6,7 +6,7 @@ import ToTopIcon from "../../images/to_top.svg"
 function SectionCard(props) {
   return (
     <div
-      className={`section-card ${props.sectionLocation} ${props.backgroundColorType}`}
+      className={`section-card ${props.margin} ${props.padding}`}
       id={props.id}>
       <div className={`${props.cardColorType} ${props.boxSize} radius15 card`}>
         <div className="card-header">

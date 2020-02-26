@@ -2,14 +2,21 @@
 
 .App {
   box-sizing: border-box;
-  margin: 0 40px;
+  margin: 0 auto;
   border: 1px solid $white-2;
   .body {
     #headshot {
       height: 90%;
-      max-height: 521px;
+      max-height: 300px;
       border: 1px solid $white-2;
       box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05);
+    }
+    #description {
+      line-height: 1.4em;
+      font-size: 1.4em;
+      margin: 30px;
+      height: 90%;
+      max-height: 300px;
     }
   }
 }

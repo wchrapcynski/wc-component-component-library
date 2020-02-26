@@ -9,6 +9,7 @@ function App() {
   const websiteData = require("./data/data.json");
   const navbarItems = websiteData.tabs;
   const images = websiteData.images;
+  const text = websiteData.text;
   return (
     <div className="App radius5">
       <div className="top">
@@ -16,32 +17,34 @@ function App() {
       </div>
       <div className="body">
         <SectionCard
-          backgroundColorType="backgroundWhite2"
           cardColorType="backgroundWhite1"
-          boxSize="boxSizeFullScreenMargin100"
+          boxSize="boxSize500x1000"
           description="Home Section"
-          sectionLocation="sectionTop">
-          <img id="headshot" className="radius15" src={require(`./images/${images.bioimage}`)} alt="headshot" />
-          <div id="description">
-
-          </div>
+          margin="margin30">
+          <img
+            id="headshot"
+            className="radius15"
+            src={require(`./images/${images.bioimage}`)}
+            alt="headshot"
+          />
+          <div id="description">{text.paragraph}</div>
         </SectionCard>
         <SectionCard
-          backgroundColorType="backgroundWhite2"
           cardColorType="backgroundWhite1"
-          boxSize="boxSizeFullScreenMargin100"
+          boxSize="boxSize500x1000"
           description="About Section"
+          margin="margin30"
+          padding="pad20"
           id={navbarItems[0]}
-          sectionLocation="sectionFull"
           toTop
         />
         <SectionCard
-          backgroundColorType="backgroundWhite2"
           cardColorType="backgroundWhite1"
-          boxSize="boxSizeFullScreenMargin100"
+          boxSize="boxSize500x1000"
           description="Contact Section"
+          margin="margin30"
+          padding="pad20"
           id={navbarItems[1]}
-          sectionLocation="sectionFull"
           toTop
         />
       </div>

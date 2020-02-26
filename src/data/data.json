@@ -8,6 +8,9 @@
   "images": {
     "bioimage": "image1.png"
   },
+  "text": {
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut euismod quam. Pellentesque malesuada facilisis risus non imperdiet. Fusce commodo enim ut commodo lobortis. Morbi in ipsum eget lectus consequat congue. Integer nulla ipsum, finibus vitae porttitor sed, pharetra sed lorem."
+  },
   "flipCards": [
     {
       "title": "Flip Card Title",
