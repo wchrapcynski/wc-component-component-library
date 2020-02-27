@@ -4,6 +4,7 @@ import "./styles/common.scss";
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
 import SectionCard from "./components/cards/sectioncard";
+import SocialMedia from "./components/icons/socialmedia";
 
 function App() {
   const websiteData = require("./data/data.json");
@@ -16,19 +17,26 @@ function App() {
         <Header navbarItems={navbarItems} title="Title" />
       </div>
       <div className="body">
-        <SectionCard
-          cardColorType="backgroundWhite1"
-          boxSize="boxSize500x1000"
-          description="Home Section"
-          margin="margin30">
-          <img
-            id="headshot"
-            className="radius15"
-            src={require(`./images/${images.bioimage}`)}
-            alt="headshot"
-          />
-          <div id="description">{text.paragraph}</div>
-        </SectionCard>
+        <div className="top-section">
+          <SectionCard
+            cardColorType="backgroundWhite1"
+            boxSize="boxSize500x1000"
+            description="Home Section"
+            margin="margin30">
+            <div className="top-section-left">
+              <img
+                id="headshot"
+                className="radius15"
+                src={require(`./images/${images.bioimage}`)}
+                alt="headshot"
+              />
+            </div>
+            <div className="top-section-right">
+              <div id="description">{text.paragraph}</div>
+              <SocialMedia />
+            </div>
+          </SectionCard>
+        </div>
         <SectionCard
           cardColorType="backgroundWhite1"
           boxSize="boxSize500x1000"
