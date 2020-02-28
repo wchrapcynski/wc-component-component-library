@@ -3,6 +3,7 @@
 .button {
   button:focus {
     outline: 0;
+    box-shadow: 0 0 4px 1px white, 0 0 0 4px rgba(53, 25, 156, 0.35);
   }
   .primary {
     @include button-template($blue-1, $blue-2, $white-1, $white-2);
