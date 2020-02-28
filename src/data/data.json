@@ -8,6 +8,24 @@
   "images": {
     "bioimage": "image1.png"
   },
+  "socialMediaIcons": [
+    {
+      "type": "linkedin",
+      "link": "https://www.linkedin.com/in/william-chrapcynski/"
+    },
+    {
+      "type": "github",
+      "link": "https://github.com/wchrapcynski"
+    },
+    {
+      "type": "medium",
+      "link": "https://medium.com/@williamchrapcynski"
+    },
+    {
+      "type": "linkedin",
+      "link": "http://magicaltech.xyz/WilliamChrapcynski-Resume-se.pdf"
+    }
+  ],
   "text": {
     "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut euismod quam. Pellentesque malesuada facilisis risus non imperdiet. Fusce commodo enim ut commodo lobortis. Morbi in ipsum eget lectus consequat congue. Integer nulla ipsum, finibus vitae porttitor sed, pharetra sed lorem."
   },

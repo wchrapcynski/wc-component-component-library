@@ -1,10 +1,15 @@
 import React from "react";
 import "./icons.scss";
 
-function Socialmedia() {
+function Socialmedia(props) {
   return (
     <div className="Socialmedia">
-      <img src={require("../../images/icons/resume.svg")} />
+      <a href={props.link} target="_blank" rel="noopener noreferrer">
+        <img
+          src={require(`../../images/icons/socialmedia-${props.type}.svg`)}
+          alt={props.type}
+        />
+      </a>
     </div>
   );
 }

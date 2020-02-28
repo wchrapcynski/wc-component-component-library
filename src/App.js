@@ -11,6 +11,11 @@ function App() {
   const navbarItems = websiteData.tabs;
   const images = websiteData.images;
   const text = websiteData.text;
+  const displaySocialMediaIcons = websiteData.socialMediaIcons.map(data => {
+    return(
+      <SocialMedia type={data.type} link={data.link} />
+    )
+  })
   return (
     <div className="App radius5">
       <div className="top">
@@ -33,7 +38,7 @@ function App() {
             </div>
             <div className="top-section-right">
               <div id="description">{text.paragraph}</div>
-              <SocialMedia />
+              <div className="social-media-icons">{displaySocialMediaIcons}</div>
             </div>
           </SectionCard>
         </div>
