@@ -6,14 +6,14 @@ import ToTopIcon from "../../images/to_top.svg"
 function SectionCard(props) {
   return (
     <div
-      className={`section-card ${props.margin} ${props.padding}`}
+      className={`section-card ${props.margin}`}
       id={props.id}>
-      <div className={`${props.cardColorType} ${props.boxSize} radius15 card`}>
+      <div className={`${props.cardColorType} radius15 card`}>
         <div className="card-header">
-          <div className="card-header-item font-size-2">
+          <div className="font-size-2">
             {props.description}
           </div>
-          <div className="card-header-item">
+          <div className="card-header-totop">
             {props.toTop ? <a href="#Top"><img src={ToTopIcon} alt="to-top" /></a> : ""}
           </div>
         </div>

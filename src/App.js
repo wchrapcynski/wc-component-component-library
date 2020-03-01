@@ -11,57 +11,55 @@ function App() {
   const navbarItems = websiteData.tabs;
   const images = websiteData.images;
   const text = websiteData.text;
-  const displaySocialMediaIcons = websiteData.socialMediaIcons.map(data => {
-    return(
-      <SocialMedia type={data.type} link={data.link} />
-    )
-  })
+  const displaySocialMediaIcons = websiteData.socialMediaIcons.map(
+    (data, key) => {
+      return <SocialMedia key={key} type={data.type} link={data.link} />;
+    }
+  );
   return (
     <div className="App radius5">
-      <div className="top">
+      <div className="header">
         <Header navbarItems={navbarItems} title="Title" />
       </div>
       <div className="body">
         <div className="top-section">
           <SectionCard
             cardColorType="backgroundWhite1"
-            boxSize="boxSize500x1000"
             description="Home Section"
             margin="margin30">
-            <div className="top-section-left">
+            <div className="headshot radius15">
               <img
-                id="headshot"
                 className="radius15"
                 src={require(`./images/${images.bioimage}`)}
                 alt="headshot"
               />
             </div>
-            <div className="top-section-right">
-              <div id="description">{text.paragraph}</div>
-              <div className="social-media-icons">{displaySocialMediaIcons}</div>
-            </div>
+            <div className="description">{text.paragraph}</div>
+            <div className="social-media-icons">{displaySocialMediaIcons}</div>
           </SectionCard>
         </div>
-        <SectionCard
-          cardColorType="backgroundWhite1"
-          boxSize="boxSize500x1000"
-          description="About Section"
-          margin="margin30"
-          padding="pad20"
-          id={navbarItems[0]}
-          toTop
-        />
-        <SectionCard
-          cardColorType="backgroundWhite1"
-          boxSize="boxSize500x1000"
-          description="Contact Section"
-          margin="margin30"
-          padding="pad20"
-          id={navbarItems[1]}
-          toTop
-        />
+        <div className="mid-section">
+          <SectionCard
+            cardColorType="backgroundWhite1"
+            description="About Section"
+            margin="margin30"
+            padding="pad20"
+            id={navbarItems[0]}
+            toTop
+          />
+        </div>
+        <div className="bottom-section">
+          <SectionCard
+            cardColorType="backgroundWhite1"
+            description="Contact Section"
+            margin="margin30"
+            padding="pad20"
+            id={navbarItems[1]}
+            toTop
+          />
+        </div>
       </div>
-      <div className="bottom">
+      <div className="footer">
         <Footer footerText="This is the footer" />
       </div>
     </div>

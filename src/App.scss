@@ -2,29 +2,40 @@
 
 .App {
   box-sizing: border-box;
-  margin: 0 auto;
   border: 1px solid $white-2;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-areas:
+    "header header header"
+    ". body ."
+    "footer footer footer";
+
+  .header {
+    grid-area: header;
+  }
   .body {
+    grid-area: body;
     .top-section {
-      .top-section-left {
-        #headshot {
-          height: 300px;
-          border: 1px solid $white-2;
-          box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05);
-        }
+      .headshot {
+        width: 300px;
+        border: 1px solid $white-2;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05);
       }
-      .top-section-right {
-        #description {
-          line-height: 1.4em;
-          font-size: 1.4em;
-          margin: 0 30px;
-          height: 255px;
-        }
-        .social-media-icons {
-          display: flex;
-          padding: 0 30px;
-        }
+      .description {
+        line-height: 1.4em;
+        font-size: 1.4em;
+      }
+      .social-media-icons {
+        display: flex;
       }
     }
+    .mid-section {
+    }
+    .bottom-section {
+    }
+  }
+  .footer {
+    grid-area: footer;
   }
 }
