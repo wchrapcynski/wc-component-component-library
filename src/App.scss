@@ -1,41 +1,36 @@
 @import "./styles/common.scss";
 
-.App {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  border: 1px solid $white-2;
-  display: grid;
-  grid-template-rows: auto auto auto;
-  grid-template-columns: 1fr 5fr 1fr;
-  grid-template-areas:
-    "header header header"
-    ". body ."
-    "footer footer footer";
+}
 
+.App {
   .header {
-    grid-area: header;
   }
   .body {
-    grid-area: body;
-    .top-section {
-      .headshot {
-        width: 300px;
-        border: 1px solid $white-2;
-        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05);
-      }
-      .description {
-        line-height: 1.4em;
-        font-size: 1.4em;
-      }
-      .social-media-icons {
-        display: flex;
-      }
-    }
-    .mid-section {
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .top-section,
+    .mid-section,
     .bottom-section {
+      width: 90%;
     }
   }
   .footer {
-    grid-area: footer;
+  }
+}
+
+@media screen and (max-width: $break-1) {
+  .App {
+    .body {
+      .top-section,
+      .mid-section,
+      .bottom-section {
+        width: 95%;
+      }
+    }
   }
 }

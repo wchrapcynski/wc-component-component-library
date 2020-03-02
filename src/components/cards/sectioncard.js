@@ -10,7 +10,7 @@ function SectionCard(props) {
       id={props.id}>
       <div className={`${props.cardColorType} radius15 card`}>
         <div className="card-header">
-          <div className="font-size-2">
+          <div className="card-header-description font-size-2">
             {props.description}
           </div>
           <div className="card-header-totop">

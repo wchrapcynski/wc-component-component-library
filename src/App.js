@@ -5,6 +5,7 @@ import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
 import SectionCard from "./components/cards/sectioncard";
 import SocialMedia from "./components/icons/socialmedia";
+import Intro from "./components/content/intro"
 
 function App() {
   const websiteData = require("./data/data.json");
@@ -27,15 +28,11 @@ function App() {
             cardColorType="backgroundWhite1"
             description="Home Section"
             margin="margin30">
-            <div className="headshot radius15">
-              <img
-                className="radius15"
-                src={require(`./images/${images.bioimage}`)}
-                alt="headshot"
-              />
-            </div>
-            <div className="description">{text.paragraph}</div>
-            <div className="social-media-icons">{displaySocialMediaIcons}</div>
+            <Intro
+              image={images.bioimage}
+              text={text.paragraph}
+              socialmedia={displaySocialMediaIcons}
+            />
           </SectionCard>
         </div>
         <div className="mid-section">
