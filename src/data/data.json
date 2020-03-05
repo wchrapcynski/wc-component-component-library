@@ -1,8 +1,8 @@
 {
-  "tabs": ["About", "Contact"],
+  "tabs": ["Projects", "Contact"],
   "sections": [
     { "description": "Home Section", "id": "Home" },
-    { "description": "About Section", "id": "About" },
+    { "description": "Projets Section", "id": "Projets" },
     { "description": "Contact Section", "id": "Contact" }
   ],
   "images": {
@@ -31,20 +31,36 @@
   },
   "flipCards": [
     {
-      "image": "image1.png",
+      "image": "flowers1.jpg",
       "flipCardText": ["Title1", "Flipcard description text", "http://magicaltech.xyz"]
     },
     {
-      "image": "image1.png",
+      "image": "flowers2.jpg",
       "flipCardText": ["Title2", "Flipcard description text", "http://magicaltech.xyz"]
     },
     {
-      "image": "image1.png",
+      "image": "flowers3.jpg",
       "flipCardText": ["Title3", "Flipcard description text", "http://magicaltech.xyz"]
     },
     {
-      "image": "image1.png",
+      "image": "flowers4.jpg",
       "flipCardText": ["Title4", "Flipcard description text", "http://magicaltech.xyz"]
+    },
+    {
+      "image": "flowers5.jpg",
+      "flipCardText": ["Title5", "Flipcard description text", "http://magicaltech.xyz"]
+    },
+    {
+      "image": "flowers6.jpg",
+      "flipCardText": ["Title6", "Flipcard description text", "http://magicaltech.xyz"]
+    },
+    {
+      "image": "flowers7.jpg",
+      "flipCardText": ["Title7", "Flipcard description text", "http://magicaltech.xyz"]
+    },
+    {
+      "image": "flowers8.jpg",
+      "flipCardText": ["Title8", "Flipcard description text", "http://magicaltech.xyz"]
     }
   ],
   "footerText": "This is the footer"

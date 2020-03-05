@@ -40,7 +40,7 @@ function App() {
         <div className="mid-section">
           <SectionCard
             cardColorType="backgroundWhite1"
-            description="About Section"
+            description="Project Section"
             margin="margin30"
             padding="pad20"
             id={navbarItems[0]}

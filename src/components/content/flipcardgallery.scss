@@ -1,7 +1,10 @@
 .flipcard-gallery {
-    display: flex;
-    justify-content: center;
-    .flipcard-gallery-item {
-        margin: 0 10px;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  .flipcard-gallery-item {
+    margin: 10px;
+  }
 }
