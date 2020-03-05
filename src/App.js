@@ -3,15 +3,17 @@ import "./App.scss";
 import "./styles/common.scss";
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
-import SectionCard from "./components/cards/sectioncard";
+import SectionCard from "./components/cards/sectioncard"
+import FlipCardGallery from "./components/content/flipcardgallery";
 import SocialMedia from "./components/icons/socialmedia";
-import Intro from "./components/content/intro"
+import Intro from "./components/content/intro";
 
 function App() {
   const websiteData = require("./data/data.json");
   const navbarItems = websiteData.tabs;
   const images = websiteData.images;
   const text = websiteData.text;
+  const flipcards = websiteData.flipCards;
   const displaySocialMediaIcons = websiteData.socialMediaIcons.map(
     (data, key) => {
       return <SocialMedia key={key} type={data.type} link={data.link} />;
@@ -42,8 +44,9 @@ function App() {
             margin="margin30"
             padding="pad20"
             id={navbarItems[0]}
-            toTop
-          />
+            toTop>
+            <FlipCardGallery flipcards={flipcards}/>
+          </SectionCard>
         </div>
         <div className="bottom-section">
           <SectionCard

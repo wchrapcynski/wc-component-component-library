@@ -25,13 +25,9 @@
 }
 
 @media screen and (max-width: $break-1) {
-  .App {
-    .body {
-      .top-section,
-      .mid-section,
-      .bottom-section {
-        width: 95%;
-      }
-    }
+  .App .body .top-section,
+  .mid-section,
+  .bottom-section {
+    width: 95%;
   }
 }

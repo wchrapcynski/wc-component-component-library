@@ -31,9 +31,20 @@
   },
   "flipCards": [
     {
-      "title": "Flip Card Title",
-      "description": "This is the flip card discription text",
-      "link": "http://magicaltech.xyz"
+      "image": "image1.png",
+      "flipCardText": ["Title1", "Flipcard description text", "http://magicaltech.xyz"]
+    },
+    {
+      "image": "image1.png",
+      "flipCardText": ["Title2", "Flipcard description text", "http://magicaltech.xyz"]
+    },
+    {
+      "image": "image1.png",
+      "flipCardText": ["Title3", "Flipcard description text", "http://magicaltech.xyz"]
+    },
+    {
+      "image": "image1.png",
+      "flipCardText": ["Title4", "Flipcard description text", "http://magicaltech.xyz"]
     }
   ],
   "footerText": "This is the footer"
