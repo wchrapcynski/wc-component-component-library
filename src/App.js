@@ -7,6 +7,7 @@ import SectionCard from "./components/cards/sectioncard";
 import FlipCardGallery from "./components/content/flipcardgallery";
 import SocialMedia from "./components/icons/socialmedia";
 import Intro from "./components/content/intro";
+import Email from "./components/email/email";
 
 function App() {
   const websiteData = require("./data/data.json");
@@ -55,7 +56,9 @@ function App() {
             margin="margin30"
             padding="pad20"
             id={navbarItems[1]}
-            toTop></SectionCard>
+            toTop>
+            <Email />
+          </SectionCard>
         </div>
       </div>
       <div className="footer">
