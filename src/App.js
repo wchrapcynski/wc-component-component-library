@@ -3,7 +3,7 @@ import "./App.scss";
 import "./styles/common.scss";
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
-import SectionCard from "./components/cards/sectioncard"
+import SectionCard from "./components/cards/sectioncard";
 import FlipCardGallery from "./components/content/flipcardgallery";
 import SocialMedia from "./components/icons/socialmedia";
 import Intro from "./components/content/intro";
@@ -45,7 +45,7 @@ function App() {
             padding="pad20"
             id={navbarItems[0]}
             toTop>
-            <FlipCardGallery flipcards={flipcards}/>
+            <FlipCardGallery flipcards={flipcards} />
           </SectionCard>
         </div>
         <div className="bottom-section">
@@ -55,8 +55,7 @@ function App() {
             margin="margin30"
             padding="pad20"
             id={navbarItems[1]}
-            toTop
-          />
+            toTop></SectionCard>
         </div>
       </div>
       <div className="footer">
