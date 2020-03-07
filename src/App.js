@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.scss";
 import "./styles/common.scss";
 import Header from "./components/header/header";
@@ -7,7 +7,7 @@ import SectionCard from "./components/cards/sectioncard";
 import FlipCardGallery from "./components/content/flipcardgallery";
 import SocialMedia from "./components/icons/socialmedia";
 import Intro from "./components/content/intro";
-import Email from "./components/email/email";
+import EmailForm from "./components/forms/emailform";
 
 function App() {
   const websiteData = require("./data/data.json");
@@ -20,6 +20,32 @@ function App() {
       return <SocialMedia key={key} type={data.type} link={data.link} />;
     }
   );
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: ""
+  });
+
+  const [formSent, setFormSent] = useState(false);
+
+  const onChangeHandler = event => {
+    event.persist();
+    const formValue = event.target.value;
+    setFormData(previousState => {
+      return { ...previousState, [event.target.name]: formValue };
+    });
+  };
+
+  const onClickHandlerSend = () => {
+    if (formSent === true) {
+      setFormSent(false);
+      setFormData('');
+    } else {
+      setFormSent(true);
+    }
+  };
+
   return (
     <div className="App radius5">
       <div className="header">
@@ -57,7 +83,24 @@ function App() {
             padding="pad20"
             id={navbarItems[1]}
             toTop>
-            <Email />
+            <div className="form-contact">
+              <div className="form-component">
+                <EmailForm
+                  onChangeHandle={onChangeHandler}
+                  onClickHandle={onClickHandlerSend}
+                />
+              </div>
+              <div
+                className={formSent ? "form-message" : "form-message hidden"}>
+                <p>
+                  <strong>Response Message:</strong>
+                </p>
+                <p>This is only test data. Click 'Submit' again to reset.</p>
+                <p>Name: {formData.name}</p>
+                <p>Email: {formData.email}</p>
+                <p>Message: {formData.message}</p>
+              </div>
+            </div>
           </SectionCard>
         </div>
       </div>

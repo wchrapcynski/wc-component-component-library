@@ -14,8 +14,6 @@ storiesOf("Forms", module)
   .add("Email", () => (
     <EmailForm
       onClickHandle={action("Clicked!")}
-      onChangeHandleName={action("Name Changed!")}
-      onChangeHandleEmail={action("Email Changed!")}
-      onChangeHandleMessage={action("Message Changed!")}
+      onChangeHandle={action("Form Data Changed!", event => event)}
     />
   ));

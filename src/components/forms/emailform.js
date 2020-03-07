@@ -13,15 +13,15 @@ function EmailForm(props) {
           type='text'
           name='name'
           placeholder='Name'
-          onChange={props.onChangeHandleName}
+          onChange={props.onChangeHandle}
           required
         />
         <input
           className='width300 pad4 margin4 radius5 pad4-left'
           type='email'
-          name='address'
+          name='email'
           placeholder='Email Address'
-          onChange={props.onChangeHandleEmail}
+          onChange={props.onChangeHandle}
         />
         <textarea
           className='pad4 margin4 radius5 pad4-left'
@@ -29,7 +29,7 @@ function EmailForm(props) {
           rows='4'
           name='message'
           placeholder='Enter your message here...'
-          onChange={props.onChangeHandleMessage}
+          onChange={props.onChangeHandle}
         />
       </form>
       <Button type='primary' onClickHandle={props.onClickHandle}>
