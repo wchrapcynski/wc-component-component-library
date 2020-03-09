@@ -6,35 +6,36 @@ import Button from "../buttons/buttons";
 function EmailForm(props) {
   return (
     <>
-      <form className='forms-email margin4'>
+      <form className="forms-email margin4">
         All fields are required:
         <input
-          className='width300 pad4 margin4 radius5 pad4-left'
-          type='text'
-          name='name'
-          placeholder='Name'
+          className="width300 pad4 margin4 radius5 pad4-left"
+          type="text"
+          name="name"
+          placeholder="Name"
           onChange={props.onChangeHandle}
-          required
         />
         <input
-          className='width300 pad4 margin4 radius5 pad4-left'
-          type='email'
-          name='email'
-          placeholder='Email Address'
+          className="width300 pad4 margin4 radius5 pad4-left"
+          type="email"
+          name="email"
+          placeholder="Email Address"
           onChange={props.onChangeHandle}
         />
         <textarea
-          className='pad4 margin4 radius5 pad4-left'
-          type='text'
-          rows='4'
-          name='message'
-          placeholder='Enter your message here...'
+          className="pad4 margin4 radius5 pad4-left"
+          type="text"
+          rows="4"
+          name="message"
+          placeholder="Enter your message here..."
           onChange={props.onChangeHandle}
         />
+        <div className="forms-submit">
+          <Button type="primary" onClickHandle={props.onClickHandle}>
+            Submit
+          </Button>
+        </div>
       </form>
-      <Button type='primary' onClickHandle={props.onClickHandle}>
-        Submit
-      </Button>
     </>
   );
 }

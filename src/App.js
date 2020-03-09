@@ -7,6 +7,7 @@ import SectionCard from "./components/cards/sectioncard";
 import FlipCardGallery from "./components/content/flipcardgallery";
 import SocialMedia from "./components/icons/socialmedia";
 import Intro from "./components/content/intro";
+import Button from "./components/buttons/buttons";
 import EmailForm from "./components/forms/emailform";
 
 function App() {
@@ -37,13 +38,18 @@ function App() {
     });
   };
 
-  const onClickHandlerSend = () => {
+  const onClickHandlerSend = event => {
     if (formSent === true) {
       setFormSent(false);
-      setFormData('');
+      setFormData("");
     } else {
       setFormSent(true);
+      event.preventDefault();
     }
+  };
+
+  const onClickHandlerRefresh = () => {
+    window.location.reload(false);
   };
 
   return (
@@ -95,10 +101,15 @@ function App() {
                 <p>
                   <strong>Response Message:</strong>
                 </p>
-                <p>This is only test data. Click 'Submit' again to reset.</p>
+                <p>This is only test data. Click 'Refresh' to reset the page</p>
                 <p>Name: {formData.name}</p>
                 <p>Email: {formData.email}</p>
                 <p>Message: {formData.message}</p>
+                <div className="button-reset">
+                  <Button type="warning" onClickHandle={onClickHandlerRefresh}>
+                    Refresh
+                  </Button>
+                </div>
               </div>
             </div>
           </SectionCard>

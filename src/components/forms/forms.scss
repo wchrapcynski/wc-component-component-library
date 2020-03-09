@@ -21,4 +21,9 @@
     font-size: $font-size-1;
     resize: none;
   }
+  .forms-submit {
+    display: flex;
+    justify-content: center;
+    margin: 3px;
+  }
 }
