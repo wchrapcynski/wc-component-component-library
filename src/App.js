@@ -116,7 +116,7 @@ function App() {
         </div>
       </div>
       <div className="footer">
-        <Footer footerText="This is the footer" />
+        <Footer footerText={websiteData.footerText} author={websiteData.author} />
       </div>
     </div>
   );

@@ -63,5 +63,6 @@
       "flipCardText": ["Title8", "Flipcard description text", "http://magicaltech.xyz"]
     }
   ],
-  "footerText": "This is the footer"
+  "footerText": "This is the footer",
+  "author": "William Chrapcynski"
 }

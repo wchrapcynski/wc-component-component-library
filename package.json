@@ -1,7 +1,8 @@
 {
-  "name": "component-library",
+  "name": "portfolio-component-library",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://portfoliolibrary.magicaltech.xyz",
   "dependencies": {
     "@testing-library/jest-dom": "^5.1.1",
     "@testing-library/react": "^9.4.0",
