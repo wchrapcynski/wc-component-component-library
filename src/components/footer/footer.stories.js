@@ -4,5 +4,5 @@ import Footer from "./footer";
 
 storiesOf("Footer", module)
   .add("Footer", () => (
-    <Footer text="Footer text" />
+    <Footer footerText="Footer text" author="William Chrapcynski" />
   ));
