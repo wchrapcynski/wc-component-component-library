@@ -11,7 +11,7 @@ const flipCardText = [
 
 storiesOf("Cards", module)
   .add("Flip Card", () => (
-    <FlipCard image="image1.png" flipCardText={flipCardText} />
+    <FlipCard image="image1.png" flipCardText={flipCardText}/>
   ))
   .add("Section Card", () => (
     <SectionCard

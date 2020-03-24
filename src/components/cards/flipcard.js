@@ -16,8 +16,9 @@ function FlipCard(props) {
             </div>
 
             <div className="flip-card-back radius15">
-                <h1>{props.flipCardText[0]}</h1>
+              <h1>{props.flipCardText[0]}</h1>
               <p>{props.flipCardText[1]}</p>
+              <p>{props.flipCardText[2]}</p>
             </div>
           </div>
         </div>

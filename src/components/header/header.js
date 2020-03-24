@@ -6,7 +6,7 @@ function Header(props) {
   const navbarDisplay = props.navbarItems.map((items, key) => {
     return (
       <a href={`#${items}`} key={key}>
-        <Button type="primary-tab" navbar onClickHandle={props.onClickHandle}>
+        <Button type="primary-tab" onClickHandle={props.onClickHandle}>
           {items}
         </Button>
       </a>
